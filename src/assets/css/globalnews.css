@@ -1,0 +1,22 @@
+.globalNews {
+  height: 250px;
+  overflow: scroll !important;
+}
+.byAuth {
+  color: green;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.card.globalNewsSection {
+  min-width: 380px !important;
+}
+
+.news-title {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.news-content {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
