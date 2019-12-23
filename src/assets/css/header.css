@@ -1,0 +1,20 @@
+.bg-black {
+  background-color: #202223 !important;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+}
+
+button.user {
+
+  background-color: #007bff00 !important;
+  border-color: #007bff00 !important;
+  padding: 0px;
+}
+/*gradient*/
+
+.blue-gradient {
+    background: linear-gradient(133deg, #161933, #2b4368) !important;
+}
