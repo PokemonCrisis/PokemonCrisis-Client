@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
 import { Navbar, Card, Row, Nav, NavDropdown, Col, Image, ButtonToolbar, Button, Overlay, OverlayTrigger, Tooltip, PopoverContent, PopoverTitle, Popover, ListGroup} from "react-bootstrap";
+import { IoIosCloseCircle } from "react-icons/io";
 
+function shoot() {
+  alert("Great Shot!");
+}
 
 export default class ChallengeWindow extends Component {
-
-    render() {
+      render() {
         return (
             <>
-
-            <Col  md="auto">
+             <Col  md="auto">
               <Card className="blue-gradient challengeWindow" text="white" style={{ width: '18rem' }}>
-                <Card.Header>Challenge Window</Card.Header>
-
-                <Card.Body>
+                <Card.Header >
+                  Challenge Window
+                  <Button className="close-button" onClick={shoot}><IoIosCloseCircle /></Button>
+                </Card.Header>
+                  <Card.Body>
                   <Card.Title className="news-title">User Challenged you to the Battle</Card.Title>
                   <Card.Text className="news-content">
                     your Team
