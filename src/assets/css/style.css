@@ -17,3 +17,8 @@ body {
 .black-gradient {
     background: linear-gradient(133deg, #000000, #2b2b2b) !important;
 }
+
+img.shop-items {
+    height: 50px;
+    width: 50px;
+}

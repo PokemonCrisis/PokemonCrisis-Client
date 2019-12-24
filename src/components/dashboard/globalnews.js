@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
 import { Navbar, Card, Row, Nav, NavDropdown, Col, Image, ButtonToolbar, Button, Overlay, OverlayTrigger, Tooltip, PopoverContent, PopoverTitle, Popover, ListGroup} from "react-bootstrap";
+import { IoIosCloseCircle } from "react-icons/io";
 
+
+function remove() {
+  document.getElementById("globalNews").innerHTML = "";
+}
 
 export default class GlobalNews extends Component {
 
     render() {
         return (
             <>
-
-            <Col  md="auto">
-              <Card className="blue-gradient globalNewsSection" text="white" style={{ width: '18rem' }}>
-                <Card.Header>Global News</Card.Header>
+          <Col  md="auto">
+              <Card className="blue-gradient globalNewsSection" id="globalNews" text="white" style={{ width: '18rem' }}>
+                <Card.Header>Global News
+                <Button className="close-button" onClick={remove}><IoIosCloseCircle /></Button>
+                </Card.Header>
                 <div className="globalNews">
                 <Card.Body>
                   <Card.Title className="news-title">Dark Card Title</Card.Title>
