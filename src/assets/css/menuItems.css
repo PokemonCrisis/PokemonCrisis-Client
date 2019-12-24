@@ -50,7 +50,7 @@ overflow:visible;
 
 .main-menu {
 background: linear-gradient(133deg, #161933, #2b4368) !important;
-border-right:1px solid #e5e5e5;
+border-right:1px;
 position:absolute;
 top:0;
 bottom:0;

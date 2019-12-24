@@ -1,3 +1,9 @@
 .challengeWindow {
   left:20% !important;
 }
+
+.close-button {
+    background-color: #fff0 !important;
+    border-color:#007bff00 !important;
+    margin-left: 60px;
+}

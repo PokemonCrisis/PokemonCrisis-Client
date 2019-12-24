@@ -1,17 +1,19 @@
-import React, { Component } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { FaShoppingCart, FaBoxOpen, FaTable, FaBattleNet, FaUserCheck, FaMobileAlt, FaReplyAll, FaDiceD20, FaChartPie, FaForumbee } from 'react-icons/fa';
-import { Navbar,Row, Nav, NavDropdown, Col, Image, ButtonToolbar, Button, Overlay, OverlayTrigger, Tooltip, PopoverContent, PopoverTitle, Popover, ListGroup} from "react-bootstrap";
+import { Navbar,Modal, Row, Nav, NavDropdown, Col, Image, ButtonToolbar, Button, Overlay, OverlayTrigger, Tooltip, PopoverContent, PopoverTitle, Popover, ListGroup} from "react-bootstrap";
 import { GiHelp, GiDiscGolfBag } from "react-icons/gi";
-import MenuCarousel from "./carousel"
+import MenuCarousel from "./carousel";
+import Shop from "./Plugins/shop"
 
+function MenuItems() {
 
-export default class MenuItems extends Component {
-
-    render() {
+  
         return (
             <>
+            
+       
               <nav className="main-menu">
               <ul>
               <br /><hr />
@@ -35,15 +37,10 @@ export default class MenuItems extends Component {
                   </li>
 
                   <hr />
-                  <li className="has-subnav">
-                      <a href="#">
-                          <i className="fa fa-2x"><FaShoppingCart /></i>
-                          <span className="nav-text">
-                              Game Shop
-                          </span>
-                      </a>
-
-                  </li>
+                  
+                  {/* Game Shop Componnet */}
+                    <Shop />
+                    
                   <li className="has-subnav">
                       <a href="#">
                          <i className="fa fa-2x"><FaTable /></i>
@@ -128,5 +125,6 @@ export default class MenuItems extends Component {
           </nav>
             </>
         )
-    }
 }
+
+export default MenuItems;
